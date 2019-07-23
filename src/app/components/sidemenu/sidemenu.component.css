@@ -26,6 +26,7 @@ ul {
 }
 
 li {
+
   padding: 10px;
   margin-right: 5px;
   font-weight: normal;
@@ -36,12 +37,23 @@ li:hover {
   background-color: #F3FAFA;
 }
 
+li:hover a {
+  color: #1B8E8E;
+}
+
 a {
+  margin-left: 15px;
   font-size: 18px;
   text-decoration: none !important;
   color: #83868F;
 }
 
-a:hover {
-  color: #1B8E8E;
+
+li:hover path {
+  fill: #1B8E8E;
+  pointer-events: none;
+}
+
+svg {
+  margin-right: 10px;
 }

@@ -4,4 +4,17 @@
 * {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.div-con {
+  display: flex;
+}
+
+
+
+.view {
+  flex-grow: 1;
+  height: 100vh;
+  background: yellow
 }
