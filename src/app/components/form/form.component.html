@@ -1,1 +1,206 @@
-<p style>form works!</p>
+<div class="container-fluid container-wrap">
+  <div class="row text-wrap r">
+    <h5>Durdans Hospital PLC</h5>
+    <a href="#">
+      <p class="text-muted">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          style=" fill:#C3C7C9;margin:0 12px"
+        >
+          <path
+            d="M6.126 9.87H19.137V12.692H6.126z"
+            opacity=".8"
+            transform="rotate(-45.001 12.631 11.28)"
+          ></path>
+          <path
+            d="M3.669 17L3 21 7 20.331zM21.707 4.879l-2.586-2.586C18.926 2.098 18.67 2 18.414 2s-.512.098-.707.293L5 15c0 0 1.005.005 1.5.5s.484 1.484.484 1.484S8.003 17.003 8.5 17.5C8.997 17.997 9 19 9 19L21.707 6.293C22.098 5.902 22.098 5.269 21.707 4.879zM8.686 15.308c-.098-.258-.227-.519-.397-.769l7.662-7.662 1.172 1.172-7.662 7.662C9.21 15.539 8.946 15.408 8.686 15.308zM18.537 6.635l-1.172-1.172 1.049-1.049 1.172 1.172L18.537 6.635z"
+          ></path></svg
+        >Request to Change
+      </p>
+    </a>
+  </div>
+  <div class="row">
+    <p>Singapore, 12 Woodbine long named road</p>
+    <a href="#">
+      <p class="text-muted">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          style=" fill:#C3C7C9;margin:0 12px "
+        >
+          <path
+            d="M6.126 9.87H19.137V12.692H6.126z"
+            opacity=".8"
+            transform="rotate(-45.001 12.631 11.28)"
+          ></path>
+          <path
+            d="M3.669 17L3 21 7 20.331zM21.707 4.879l-2.586-2.586C18.926 2.098 18.67 2 18.414 2s-.512.098-.707.293L5 15c0 0 1.005.005 1.5.5s.484 1.484.484 1.484S8.003 17.003 8.5 17.5C8.997 17.997 9 19 9 19L21.707 6.293C22.098 5.902 22.098 5.269 21.707 4.879zM8.686 15.308c-.098-.258-.227-.519-.397-.769l7.662-7.662 1.172 1.172-7.662 7.662C9.21 15.539 8.946 15.408 8.686 15.308zM18.537 6.635l-1.172-1.172 1.049-1.049 1.172 1.172L18.537 6.635z"
+          ></path></svg
+        >Request to Change
+      </p>
+    </a>
+  </div>
+
+  <div class="row">
+    Hospital photos
+  </div>
+
+  <div class="container-gallery">
+    <div class="row">
+      <div
+        style="padding-left:0;padding-right:5px"
+        class="col-md-4 col-lg-4 col-sm-12"
+        *ngFor="let image of images"
+      >
+        <a href="">
+          <img
+            style="height:125px;width:175px; border-radius:6px"
+            [src]="image.path"
+            alt="image.name"
+          />
+        </a>
+        <a style="padding-top:20px;color:#F85050;" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 26 26"
+            style=" fill:#F85050;"
+          >
+            <path
+              d="M 10 2 L 9 3 L 4 3 L 4 5 L 5 5 L 5 20 C 5 21.093063 5.9069372 22 7 22 L 15 22 L 15 20 L 7 20 L 7 5 L 17 5 L 17 15 L 19 15 L 19 5 L 20 5 L 20 3 L 19 3 L 15 3 L 14 2 L 10 2 z M 9 7 L 9 18 L 11 18 L 11 7 L 9 7 z M 13 7 L 13 18 L 15 18 L 15 7 L 13 7 z M 17.878906 16.929688 L 16.464844 18.34375 L 18.585938 20.464844 L 16.464844 22.585938 L 17.878906 24 L 20 21.878906 L 22.121094 24 L 23.535156 22.585938 L 21.414062 20.464844 L 23.535156 18.34375 L 22.121094 16.929688 L 20 19.050781 L 17.878906 16.929688 z"
+            ></path>
+          </svg>
+          Delete</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="form-wrapper">
+    <div class="row">
+      Contact and Description
+    </div>
+    <div>
+      <!-- form start -->
+      <form>
+        <div class="form-group row">
+          <label for="email" class="col-sm-3 col-form-label">Email</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="email" value="" />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="contact" class="col-sm-3 col-form-label"
+            >Contact Number</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="contact" />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="websiteUrl" class="col-sm-3 col-form-label"
+            >Website URL</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="websiteUrl" />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="highlight1"
+            >Highlight 1</label
+          >
+          <div class="col-sm-9">
+            <textarea class="form-control" id="highlight1" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label" for="description"
+            >Description</label
+          >
+          <div class="col-sm-9">
+            <textarea class="form-control" id="description" rows="4"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="currency" class="col-sm-3 col-form-label">Currency</label>
+          <div class="col-sm-9">
+            <select
+              class="custom-select my-1 mr-sm-2"
+              id="inlineFormCustomSelectPref"
+            >
+              <option selected>$ dollars US</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <h6>Meal Type</h6>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label" for="mealName"
+            >Meal Name</label
+          >
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="mealName" />
+          </div>
+          <div class="col-sm-1" style="text-align: center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="16"
+              height="16"
+              viewBox="0 0 26 26"
+              style="fill:#F85050;"
+            >
+              <path
+                d="M 10 2 L 9 3 L 4 3 L 4 5 L 5 5 L 5 20 C 5 21.093063 5.9069372 22 7 22 L 15 22 L 15 20 L 7 20 L 7 5 L 17 5 L 17 15 L 19 15 L 19 5 L 20 5 L 20 3 L 19 3 L 15 3 L 14 2 L 10 2 z M 9 7 L 9 18 L 11 18 L 11 7 L 9 7 z M 13 7 L 13 18 L 15 18 L 15 7 L 13 7 z M 17.878906 16.929688 L 16.464844 18.34375 L 18.585938 20.464844 L 16.464844 22.585938 L 17.878906 24 L 20 21.878906 L 22.121094 24 L 23.535156 22.585938 L 21.414062 20.464844 L 23.535156 18.34375 L 22.121094 16.929688 L 20 19.050781 L 17.878906 16.929688 z"
+              ></path>
+            </svg>
+            <a style="font-size: 10px;">Delete</a>
+          </div>
+          <label class="col-sm-3 col-form-label" for="mealName"
+            ><a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 30 30"
+                style=" fill:#7ECECF;margin: 5px;"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21,16h-5v5 c0,0.553-0.448,1-1,1s-1-0.447-1-1v-5H9c-0.552,0-1-0.447-1-1s0.448-1,1-1h5V9c0-0.553,0.448-1,1-1s1,0.447,1,1v5h5 c0.552,0,1,0.447,1,1S21.552,16,21,16z"
+                ></path></svg
+              >Add New Meal Type</a
+            ></label
+          >
+        </div>
+        <div class="d-flex flex-row-reverse">
+          <button type="button" class="btn btn-primary">
+            Save
+          </button>
+        </div>
+      </form>
+      <!-- form end -->
+    </div>
+  </div>
+</div>

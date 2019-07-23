@@ -1,0 +1,27 @@
+* {
+  color: #6d6873;
+}
+
+.container-gallery {
+  max-width: 550px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-gallery {
+  padding: 15px 0;
+
+}
+
+.form-wrapper {
+  padding: 10px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #21A7A7;
+  border-color: #21A7A7;
+
+}
