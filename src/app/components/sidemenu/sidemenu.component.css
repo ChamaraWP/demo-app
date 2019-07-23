@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+
+}
+
+#sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100vh;
+  border-style: solid;
+  border-width: 0 2px 0px 0px;
+  border-color: lightgrey;
+
+}
+
+.logo {
+  text-align: center;
+  padding: 20% 0;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+li {
+  padding: 10px;
+  margin-right: 5px;
+  font-weight: normal;
+
+}
+
+li:hover {
+  background-color: #F3FAFA;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none !important;
+  color: #83868F;
+}
+
+a:hover {
+  color: #1B8E8E;
+}
