@@ -7,7 +7,7 @@
 #sidebar {
   min-width: 300px;
   max-width: 300px;
-  min-height: 250vh;
+  min-height: 170vh;
   border-style: solid;
   border-width: 0 2px 0px 0px;
   border-color: lightgrey;
@@ -33,13 +33,13 @@ li {
 
 }
 
-/* li:hover {
+li:hover {
   background-color: #F3FAFA;
-} */
+}
 
 li:hover a {
-  /*color: #1B8E8E;*/
-  color: #636773;
+  color: #1B8E8E;
+
 }
 
 a {
@@ -51,7 +51,7 @@ a {
 
 
 li:hover path {
-  fill: #636773;
+  fill: #1B8E8E;
   pointer-events: none;
 }
 
