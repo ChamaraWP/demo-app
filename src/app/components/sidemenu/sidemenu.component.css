@@ -28,17 +28,18 @@ ul {
 li {
 
   padding: 10px;
-  margin-right: 5px;
+
   font-weight: normal;
 
 }
 
-li:hover {
+/* li:hover {
   background-color: #F3FAFA;
-}
+} */
 
 li:hover a {
-  color: #1B8E8E;
+  /*color: #1B8E8E;*/
+  color: #636773;
 }
 
 a {
@@ -50,10 +51,40 @@ a {
 
 
 li:hover path {
-  fill: #1B8E8E;
+  fill: #636773;
   pointer-events: none;
 }
 
 svg {
   margin-right: 10px;
 }
+
+
+li:active {
+  background-color: #F3FAFA;
+}
+
+li:active a {
+  color: #1B8E8E;
+}
+
+li:active path {
+  fill: #1B8E8E;
+}
+
+
+/* ul.active {
+  background-color: #F3FAFA;
+}
+
+ul.active li {
+  background-color: #F3FAFA;
+}
+
+ul.active path {
+  color: #1B8E8E;
+}
+
+ul.active a {
+  fill: #1B8E8E;
+} */

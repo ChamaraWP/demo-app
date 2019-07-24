@@ -4,16 +4,13 @@
 
 .container-gallery {
   max-width: 550px;
+  padding: 15px 0;
 }
 
 a {
   text-decoration: none;
 }
 
-.container-gallery {
-  padding: 15px 0;
-
-}
 
 .form-wrapper {
   padding: 10px;
