@@ -3,7 +3,7 @@
 }
 
 .container-gallery {
-  max-width: 550px;
+  max-width: 650px;
   padding: 15px 0;
 }
 
@@ -14,6 +14,7 @@ a {
 
 .form-wrapper {
   padding: 10px;
+  margin: 0 50px;
 }
 
 .btn-primary {
@@ -21,4 +22,8 @@ a {
   background-color: #21A7A7;
   border-color: #21A7A7;
 
+}
+
+.text-wrap {
+  margin: 20px 0;
 }
