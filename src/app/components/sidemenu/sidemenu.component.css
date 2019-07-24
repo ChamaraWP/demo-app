@@ -71,20 +71,3 @@ li:active a {
 li:active path {
   fill: #1B8E8E;
 }
-
-
-/* ul.active {
-  background-color: #F3FAFA;
-}
-
-ul.active li {
-  background-color: #F3FAFA;
-}
-
-ul.active path {
-  color: #1B8E8E;
-}
-
-ul.active a {
-  fill: #1B8E8E;
-} */
